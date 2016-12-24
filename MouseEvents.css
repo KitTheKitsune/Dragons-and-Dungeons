@@ -1,0 +1,73 @@
+div {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+#popup {
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+#popupTwo {
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+#popupThree {
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+#popupFour {
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+#parent {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 0px;
+}
+
+#parentTwo {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 0px;
+}
+
+#parentThree {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 0px;
+}
+
+#parentFour {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 0px;
+}
+
+#daddyOne {
+    border: 1px solid black;
+    box-sizing: border-box; 
+    height: 50px;
+    width: 100%;
+    
+}
+
+#daddyTwo {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    
+}

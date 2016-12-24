@@ -1,0 +1,12 @@
+.popup {
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.parent {
+    float: left;
+    width: 30%;
+    height: 30px;
+    border: 1px solid black;
+}
