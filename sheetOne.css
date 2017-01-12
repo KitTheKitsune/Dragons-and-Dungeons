@@ -1,1 +1,187 @@
 
+div{
+    border: 1px black solid;
+    margin: none;
+    padding: none;
+    height: auto;
+    width: 100%;
+    
+}
+
+body{
+    padding-left: 5%;
+}
+
+.floatL{
+    float: left;
+}
+
+.threeColumn{
+    width: 30%;
+    height: 1800px;
+    float: left;
+}
+
+#upperStatsParent{
+    width: 100%;
+    height: 100px;
+}
+
+#inspirationParent{
+    width: inherit;
+    height: 49%;
+}
+
+#proficiencyBonusParent{
+    width: inherit;
+    height: 49%;
+}
+
+#inspiration{
+    height: 100%;
+    width: 25%;
+}
+
+#inspirationTitle{
+    height: 100%;
+    width: 74%;
+}
+
+#proficiencyBonus{
+    height: 100%;
+    width: 25%;
+}
+
+#proficiencyBonusTitle{
+    height: 100%;
+    width: 74%;
+}
+
+.abilityTitle{
+    height: 30px;
+    width: 100%;
+}
+
+.abilityScoreParent{
+    float: left;
+    width: 30%;
+    height: 88px;
+}
+
+.abilitySkillsParent{
+    float: left;
+    width: 69%;
+}
+
+.abilityStats{
+    height: 130px;
+}
+
+.skillParent{
+    height: 20px;
+}
+
+.skill{
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+
+.skillTitle{
+    float: left;
+    height: 100%;
+    width: 57%;
+}
+
+.abilityScore{
+    height: 65%;
+}
+
+.abilityModifier{
+    height: 34%;
+}
+
+#passivePerceptionTitle{
+    float: left;
+    width: 74%;
+    height: 100%;
+}
+
+#passivePerception{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+#passivePerceptionParent{
+    height: 50px;
+}
+
+#featsTitle{
+    height: 30px;
+}
+
+.featSlot{
+    height: 39px;
+}
+
+.detailsParent{
+    height: 50px;
+}
+
+.detailParent{
+    height: 100%;
+    width: 49.5%;
+    float: left;
+}
+
+.detail{
+    height: 70%;
+}
+
+.combat{
+    height: 75%;
+}
+
+.detailTitle{
+    font-size: 10px;
+}
+
+.combatParent{
+    height: 70px;
+}
+
+#circleParent{
+    height: 400px;
+}
+
+#ACParent{
+    width: 30%;
+    height: 50px;
+    float: left;
+}
+
+#upperCircle{
+    float: left;
+    width: 60%;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
