@@ -2,8 +2,17 @@
 <html>
 <head>
     <link type="text/css" rel="stylesheet" href="sheetOne.css">
+    <link type="text/css" rel="stylesheet" href="sheetTwo.css">
+    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="functionLibrary.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
+    
+    <div id="popup"></div>
+    
+    
     <div class="threeColumn" id="skillsParent">
         
         
@@ -35,9 +44,9 @@
             <div class="abilityStats" id="strengthStats">
               <div class="abilityScoreParent" id="strengthScoreParent">
                 <div class="abilityScore" id="strengthScore">
-                  0
+                  <input type="number" id="StrengthScore">
                 </div>
-                <div class="abilityModifier" id="strengthModifier">
+                <div class="abilityModifier" id="StrengthModifier">
                   0
                 </div>
               </div>
@@ -74,9 +83,9 @@
             <div class="abilityStats" id="dexterityStats">
               <div class="abilityScoreParent" id="dexterityScoreParent">
                 <div class="abilityScore" id="dexterityScore">
-                  0
+                  <input type="number" id="DexterityScore">
                 </div>
-                <div class="abilityModifier" id="dexterityModifier">
+                <div class="abilityModifier" id="DexterityModifier">
                   0
                 </div>
               </div>
@@ -135,9 +144,9 @@
             <div class="abilityStats" id="constitutionStats">
               <div class="abilityScoreParent" id="constituionScoreParent">
                 <div class="abilityScore" id="constitutionScore">
-                  0
+                  <input type="number" id="ConstitutionScore">
                 </div>
-                <div class="abilityModifier" id="constitutionModifier">
+                <div class="abilityModifier" id="ConstitutionModifier">
                   0
                 </div>
               </div>
@@ -163,9 +172,9 @@
             <div class="abilityStats" id="intelligenceStats">
               <div class="abilityScoreParent"id="intelligenceScoreParent">
                 <div class="abilityScore" id="intelligenceScore">
-                  0
+                  <input type="number" id="IntelligenceScore">
                 </div>
-                <div class="abilityModifier" id="intelligenceModifier">
+                <div class="abilityModifier" id="IntelligenceModifier">
                   0
                 </div>
               </div>
@@ -246,9 +255,9 @@
             <div class="abilityStats" id="wisdomStats">
               <div class="abilityScoreParent" id="wisdomScoreParent">
                 <div class="abilityScore" id="wisdomScore">
-                  0
+                  <input type="number" id="WisdomScore">
                 </div>
-                <div class="abilityModifier" id="wisdomModifier">
+                <div class="abilityModifier" id="WisdomModifier">
                   0
                 </div>
               </div>
@@ -329,9 +338,9 @@
             <div class="abilityStats" id="charismaStats">
               <div class="abilityScoreParent" id="charismaScoreParent">
                 <div class="abilityScore" id="charismaScore">
-                  0
+                  <input type="number" id="CharismaScore">
                 </div>
-                <div class="abilityModifier" id="charismaModifier">
+                <div class="abilityModifier" id="CharismaModifier">
                   0
                 </div>
               </div>
@@ -488,7 +497,7 @@
             </div>
             
             <div class="detailsParent" id="experienceAlignmentParent">
-                <div class="detailParent" id="experienceParent">
+                <div class="detailColumn" id="experienceParent">
                     <div class="detail" id="experience">
                     
                     </div>
@@ -496,12 +505,20 @@
                     Experience
                     </div>
                 </div>
-                <div class="detailParent" id="alignmentParent">
+                <div class="detailColumn" id="alignmentParent">
                     <div class="detail" id="alignment">
                     
                     </div>
                     <div class="detailTitle" id="alignmentTitle">
                         Alignment
+                    </div>
+                </div>
+                <div class="detailColumn">
+                    <div class="detail" id="race">
+                    
+                    </div>
+                    <div class="detailTitle" id="alignmentTitle">
+                        Race
                     </div>
                 </div>
             </div>
