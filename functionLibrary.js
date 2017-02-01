@@ -17,26 +17,26 @@ function localSave(){
 //load data from local storage
 function loadCharacter(CharName){
     localStorage.getItem(CharName)
-}
+};
 
 //displays the hidden character sheet
 function displayPage(){
     $("#mainBodyParent").show();
-}
+};
 
 //hides the character sheet
 function hidePage(){
     $("#mainBodyParent").hide();
-}
+};
 
 //displays the main menu
 function displayMenu(){
     $("#mainMenuParent").show();
-}
+};
 
 function hideMenu(){
     $("#mainMenuParent").hide();
-}
+};
 
 //displays a loading screen whenever the program is doing lengthy loading
 function displayLoading(){
@@ -57,11 +57,11 @@ function hidePage2(){
 
 function displaySpells(){
     $("#mainSpellbookParent").show();
-}
+};
 
 function hideSpells(){
     $("#mainSpellbookParent").hide();
-}
+};
 
 //generates dropdown menu in the location "selector" containing "data" from list "options"
 function dropGen(data, selector){
@@ -77,20 +77,23 @@ function dropGen(data, selector){
     });
 };
 
-//generates and displays popup data next to mouse while over "selector" displaying "data1.data2" in list "options"
-function displayPopup(selector, data1, data2){
-    $(selector).append(select.clone());
-    $(selector+" select").on("change", function(){
+//generates and displays popup data next to mouse while over "selector" displaying "data1.stuff" in list "options"
+function displayText(selector, data){
+    $("#"+selector+" select").on("change", function(){
         var stuff = $(this).val();
-        var choice = options[data1]
-        $("#popup").text(choice[data2].display);
+        var choice = options[data]
+        $("#popup").text(choice[stuff].display);
     });
-    $(selector+"").hover(function(){
+    $("#"+selector+" select").hover(function(){
+        $("#popup").css("display", "block");
+        var stuff = $(this).val();
+        var choice = options[data]
+        $("#popup").text(choice[stuff].display);
         
-            //remember to set display:block in css file
-        $("#popup").show();
     }, function(){
-        $("#popup").hide();
+        $("#popup").css("display", "none");
+        $("#popup").text("");
+        
     });
 };
 
@@ -99,7 +102,7 @@ function mouseMove(selector,selection){
     $(selector+"").mousemove(function(e){
         var y = e.pageY;
         var x = e.pageX;                    
-        $(selection+'').css({'top': y++}); 
+        $(selection+'').css({'top': y+1}); 
         $(selection+'').css({'left': x+5}); 
     });
 };
@@ -204,8 +207,9 @@ function equipArmor(item){
             armor = parseInt(armor, 10);
             AC = armor + defence;
         }
+    }
 };
-    
+
 //Calculates armor class
 function unequipArmor(item){
     var defence = $("#ArmorClass").text();
@@ -240,6 +244,7 @@ function unequipArmor(item){
             AC = defence - armor;
         }
         $("#ArmorClass").text(AC);
+    }
 };
     
 //updates AC without equipping and unequipping
@@ -451,11 +456,18 @@ function initiativeCalc(){
         var initiative = abilityScore;
         $("#initiative_input").text(initiative);
     })
-}
+};
+    
 //calculates speed based on race 
-function speedCalc(){
+function speedsdCalc(){
     $("#race_input select").on("change", function(){
         var race = $(this).val();
         $("#speed_input").text(options.races[race].base_speed);
-    });
+    })
 };
+    
+    
+    
+    
+    
+    
