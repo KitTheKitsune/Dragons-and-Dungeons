@@ -1,1 +1,65 @@
+div{
+    border: 1px black solid;
+    margin: none;
+    padding: none;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+body{
+    padding-left: 5%;
+}
+
+.threeColumn{
+    float: left;
+    width: 32%;
+}
+
+.mainParent{
+    height: 1800px;
+}
+
+#centerParent{
+    width: 23%;
+}
+
+#rightParent{
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
