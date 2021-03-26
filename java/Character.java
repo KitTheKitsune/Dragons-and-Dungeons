@@ -19,9 +19,9 @@ class Character {
     this.level = 1;
     this.maxhealth = 1;
     this.armorclass = 1;
-    this.runspeed = 30;
-    this.flyspeed = 0;
-    this.swimspeed = 0;
+    this.runspeed = this.race.getRunSpeed();
+    this.flyspeed = this.race.getFlySpeed();
+    this.swimspeed = this.race.getSwimSpeed();
     this.currhealth = this.maxhealth;
     this.background = new Background();
     this.alignment = new Alignment();
